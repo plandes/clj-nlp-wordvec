@@ -21,9 +21,9 @@ API [documentation](https://plandes.github.io/clj-nlp-wordvec/codox/index.html).
 
 
 Use the `similarity-features` to create the features used in
-the [model](#https://github.com/plandes/clj-ml-model#create-features).  Again,
+the [model](https://github.com/plandes/clj-ml-model#create-features).  Again,
 this piggybacks on the [word count calculation], which has to be calculated
-on [two pass cross validation](#https://github.com/plandes/clj-ml-model#one-pass-traintest).
+on [two pass cross validation](https://github.com/plandes/clj-ml-model#one-pass-traintest).
 For example:
 
 ```clojure
@@ -84,4 +84,4 @@ limitations under the License.
 
 
 <!-- links -->
-[word count calculation](#https://plandes.github.io/clj-nlp-parse/codox/zensols.nlparse.feature.word-count.html#var-calculate-feature-stats)
+[word count calculation](https://plandes.github.io/clj-nlp-parse/codox/zensols.nlparse.feature.word-count.html#var-calculate-feature-stats)
