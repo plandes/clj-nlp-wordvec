@@ -19,7 +19,6 @@ API [documentation](https://plandes.github.io/clj-nlp-wordvec/codox/index.html).
 
 ## Usage
 
-
 Use the `similarity-features` to create the features used in
 the [model](https://github.com/plandes/clj-ml-model#create-features).  Again,
 this piggybacks on the [word count calculation], which has to be calculated
@@ -57,6 +56,39 @@ To build from source, do the folling:
 - Build the distribution binaries: `make dist`
 
 Note that you can also build a single jar file with all the dependencies with: `make uber`
+
+
+## Citation
+
+If you use this software in your research, please cite with the following
+BibTeX:
+
+```jflex
+@misc{plandes-clj-nlp-wordvec,
+  author = {Paul Landes},
+  title = {Word Vector Feature Creation},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/plandes/clj-nlp-wordvec}}
+}
+```
+
+
+## References
+
+See the [general NLP feature creation]library for additional references.
+
+```jflex
+@misc{deeplearning4j,
+  author = {Eclipse Deeplearning4j Development Team},
+  title = {Deeplearning4j: Open-source distributed deep learning for the JVM},
+  year = {2018},
+  publisher = {Apache Software Foundation License 2.0},
+  journal = {GitHub repository},
+  howpublished = {\url{https://deeplearning4j.org/}}
+}
+```
 
 
 ## Changelog
