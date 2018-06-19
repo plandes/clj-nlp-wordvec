@@ -8,7 +8,7 @@
             [zensols.nlparse.parse :as p]
             [zensols.actioncli.util :refer (defnlock)]
             [zensols.actioncli.resource :as res]
-            [zensols.nlparse.feature.resource :as wr]))
+            [zensols.nlparse.wordvec-resource :as wr]))
 
 (wr/initialize)
 

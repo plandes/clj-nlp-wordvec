@@ -1,8 +1,8 @@
 (defproject com.zensols.nlp/wordvec "0.1.0-SNAPSHOT"
   :description "This creates word vector features for natural language processing projects."
   :url "https://github.com/plandes/clj-nlp-wordvec"
-  :license {:name "Apache License version 2.0"
-            :url "https://www.apache.org/licenses/LICENSE-2.0"
+  :license {:name "MIT"
+            :url "https://opensource.org/licenses/MIT"
             :distribution :repo}
   :plugins [[lein-codox "0.10.3"]
             [lein-javadoc "0.3.0"]
@@ -65,14 +65,15 @@
                                xml-apis]]
 
                  ;; manage parsed annotations
-                 [com.zensols.nlp/parse "0.1.4"]]
+                 [com.zensols.nlp/parse "0.1.6"]]
   :pom-plugins [[org.codehaus.mojo/appassembler-maven-plugin "1.6"
                  {:configuration ([:programs
                                    [:program
                                     ([:mainClass "zensols.nlparse.feature.core"]
                                      [:id "someproj"])]]
                                   [:environmentSetupFileName "setupenv"])}]]
-  :profiles {:uberjar {:aot [zensols.nlparse.feature.core]}
+  :profiles {:1.9 {:dependencies [[org.clojure/clojure "1.9.0"]]}
+             :uberjar {:aot [zensols.nlparse.feature.core]}
              :appassem {:aot :all}
              :snapshot {:git-version {:version-cmd "echo -snapshot"}}
              :dev
@@ -82,6 +83,8 @@
               :dependencies [[org.apache.logging.log4j/log4j-slf4j-impl "2.7"]
                              [org.apache.logging.log4j/log4j-1.2-api "2.7"]
                              [org.apache.logging.log4j/log4j-jcl "2.7"]
-                             [org.apache.logging.log4j/log4j-jul "2.7"]]}
-             :test {:jvm-opts ["-Dlog4j.configurationFile=test-resources/test-log4j2.xml"
+                             [org.apache.logging.log4j/log4j-jul "2.7"]
+                             [com.zensols.tools/misc "0.0.5"]]}
+             :test {:dependencies [[com.zensols.tools/misc "0.0.5"]]
+                    :jvm-opts ["-Dlog4j.configurationFile=test-resources/test-log4j2.xml"
                                "-Xms4g" "-Xmx12g" "-XX:+UseConcMarkSweepGC"]}})

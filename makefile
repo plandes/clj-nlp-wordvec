@@ -2,6 +2,7 @@
 
 # type of project, currently one of: clojure, python
 PROJ_TYPE=		clojure
+PROJ_MODULES=		nlpmodel
 
 # make build dependencies
 _ :=	$(shell [ ! -d .git ] && git init ; [ ! -d zenbuild ] && \
@@ -10,5 +11,6 @@ _ :=	$(shell [ ! -d .git ] && git init ; [ ! -d zenbuild ] && \
 include ./zenbuild/main.mk
 
 .PHONY: test
-test:
+test:	model $(GLOVE_MODEL)
+	mkdir -p dev-resources
 	$(LEIN) test

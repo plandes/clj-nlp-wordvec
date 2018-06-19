@@ -1,4 +1,4 @@
-(ns zensols.nlparse.feature.resource
+(ns zensols.nlparse.wordvec-resource
   (:require [clojure.tools.logging :as log]
             [zensols.nlparse.resource :as prs]
             [zensols.actioncli.resource :refer (resource-path) :as res]))
