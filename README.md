@@ -1,8 +1,18 @@
 # Word Vector Feature Creation
 
+[![Travis CI Build Status][travis-badge]][travis-link]
+
+  [travis-link]: https://travis-ci.org/plandes/clj-nlp-parse
+  [travis-badge]: https://travis-ci.org/plandes/clj-nlp-parse.svg?branch=master
+
 This library creates word vector features for natural language processing
 projects.  It does this using cosine similarity using across the most common
 words found using the [word count calculation] function.
+
+While this library is meant to work with the [NLP parse library] and [machine
+learning library] much like the [general NLP feature creation] library, it
+doesn't need to.  However, it has a dependency on the [NLP parse library].
+
 
 
 ## Obtaining
@@ -42,6 +52,8 @@ For example:
               (if word-count-stats
                 (ws/similarity-features tokens word-count-stats)))))))
 ```
+
+See the [unit test case](test/zensols/nlparse/wordvec_test.clj).
 
 
 ## Building
@@ -109,3 +121,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <!-- links -->
 [word count calculation](https://plandes.github.io/clj-nlp-parse/codox/zensols.nlparse.feature.word-count.html#var-calculate-feature-stats)
+[NLP parse library]: https://github.com/plandes/clj-nlp-parse
+[machine learning library]: https://github.com/plandes/clj-ml-model
+[general NLP feature creation]: https://github.com/plandes/clj-nlp-feature
