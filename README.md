@@ -2,8 +2,8 @@
 
 [![Travis CI Build Status][travis-badge]][travis-link]
 
-  [travis-link]: https://travis-ci.org/plandes/clj-nlp-parse
-  [travis-badge]: https://travis-ci.org/plandes/clj-nlp-parse.svg?branch=master
+  [travis-link]: https://travis-ci.org/plandes/clj-wordvec
+  [travis-badge]: https://travis-ci.org/plandes/clj-wordvec.svg?branch=master
 
 This library creates word vector features for natural language processing
 projects.  It does this using cosine similarity using across the most common
