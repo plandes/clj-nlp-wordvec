@@ -120,7 +120,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 <!-- links -->
-[word count calculation]: (https://plandes.github.io/clj-nlp-parse/codox/zensols.nlparse.feature.word-count.html#var-calculate-feature-stats)
+[word count calculation]: https://plandes.github.io/clj-nlp-parse/codox/zensols.nlparse.feature.word-count.html#var-calculate-feature-stats
 [NLP parse library]: https://github.com/plandes/clj-nlp-parse
 [machine learning library]: https://github.com/plandes/clj-ml-model
 [general NLP feature creation]: https://github.com/plandes/clj-nlp-feature
