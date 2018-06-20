@@ -2,9 +2,6 @@
 
 [![Travis CI Build Status][travis-badge]][travis-link]
 
-  [travis-link]: https://travis-ci.org/plandes/clj-wordvec
-  [travis-badge]: https://travis-ci.org/plandes/clj-wordvec.svg?branch=master
-
 This library creates word vector features for natural language processing
 projects.  It does this using cosine similarity using across the most common
 words found using the [word count calculation] function.
@@ -124,3 +121,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [NLP parse library]: https://github.com/plandes/clj-nlp-parse
 [machine learning library]: https://github.com/plandes/clj-ml-model
 [general NLP feature creation]: https://github.com/plandes/clj-nlp-feature
+[travis-link]: https://travis-ci.org/plandes/clj-nlp-wordvec
+[travis-badge]: https://travis-ci.org/plandes/clj-nlp-wordvec.svg?branch=master
